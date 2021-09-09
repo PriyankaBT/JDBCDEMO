@@ -1,8 +1,7 @@
 package com.sample;
-
 import java.sql.CallableStatement;
 import java.sql.Connection;
-import java.sql.Date;
+
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -56,7 +55,7 @@ public class PrepareDemo {
 			stmt3.setString(2,"20-Aug-21");
 			int r1=stmt3.executeUpdate();
 			System.out.println("Status for update"+r1);
-			
+			System.out.println("Trying ...");
 			
 		} catch (Exception e) {
 			System.out.print(e);
